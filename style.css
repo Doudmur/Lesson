@@ -45,3 +45,41 @@ a:hover {
     display: flex;
     justify-content: end;
 }
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .django {
+        width: 500px;
+    }
+    .django-cont {
+        width: 50%;
+    }
+    .text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1179px) and (min-width: 1024px){
+    .django {
+        width: 600px;
+    }
+    .django-cont {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .django {
+        width: 800px;
+    }
+    .django-cont {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+}
