@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5dcc4;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+}
+
+h6{
+    font-size: 20px;
+}
+
+#main-text {
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'Inter Semi Bold', sans-serif;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: start;
+}
+
+.main-image img {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .django {
+        width: 500px;
+    }
+    .django-cont {
+        width: 50%;
+    }
+    .text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1179px) and (min-width: 1024px){
+    .django {
+        width: 600px;
+    }
+    .django-cont {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .django {
+        width: 800px;
+    }
+    .django-cont {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+}
