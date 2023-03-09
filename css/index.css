@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #17130C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+/*navbar*/
+
+.navbar {
+    height: 120px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+#but {
+    font-weight: 800;
+}
+
+/*back*/
+
+.back {
+    padding: 0 7%;
+    margin: 0;
+    background-image: url("/images/index/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.back img {
+    padding: 0;
+}
+
+.back .main {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: white;
+}
+
+.main h1 {
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15vb;
+}
+
+.main h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+button {
+    width: 240px;
+    height: 42px;
+    border: none;
+    background: #EF233C;
+    color: white;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*content*/
+
+.content {
+    color: white;
+    margin: 72px 7%;
+}
+
+.content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content p {
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+#desc {
+    position: absolute;
+    top: 1400px;
+    left: -170px;
+    opacity: 10%;
+    color: #17130C;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 103px;
+    line-height: 118px;
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    transform: rotate(-90deg);
+}
+
+/*episodes*/
+
+.episodes {
+    display: flex;
+    margin-top: 200px;
+    padding: 0 7%;
+}
+
+#episodes {
+    position: absolute;
+    top: 2070px;
+    left: -130px;
+    opacity: 10%;
+    color: #17130C;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 103px;
+    line-height: 118px;
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    transform: rotate(-90deg);
+}
+
+.episodes h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.episodes h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.episodes h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.episodes img:not(#next){
+    width: 100%;
+    padding: 5px;
+}
+
+.episodes p {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/*merch*/
+
+.merch {
+    display: flex;
+    margin-top: 200px;
+    padding: 0 7%;
+}
+
+#merch {
+    position: absolute;
+    top: 2790px;
+    left: -70px;
+    opacity: 10%;
+    color: #17130C;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 103px;
+    line-height: 118px;
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    transform: rotate(-90deg);
+}
+
+/*footer*/
+
+.footer {
+    padding: 0 7%;
+    height: 100px;
+    background-color: #1E1134;
+    margin-top: 5%;
+}
+
+.footer a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
