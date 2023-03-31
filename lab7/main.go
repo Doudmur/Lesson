@@ -1,15 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	a := 0
+	var a, sum int
 	fmt.Scan(&a)
-	if a > 0 {
-		fmt.Println("Число положительное")
-	} else if a < 0 {
-		fmt.Println("Число отрицательное")
-	} else {
-		fmt.Println("Ноль")
+	arr := make([]int, a)
+	for i := 0; i < a; i++ {
+		fmt.Scan(&arr[i])
+		sum += arr[i] * arr[i] * arr[i]
 	}
+	fmt.Print(sum)
 }
