@@ -21,7 +21,7 @@ type server struct {
 }
 
 func dbConnect() server {
-	db, err := sql.Open("sqlite3", "db.sql")
+	db, err := sql.Open("sqlite3", "db.db")
 	fmt.Println("Opening database")
 	if err != nil {
 		log.Fatal(err)
@@ -47,7 +47,7 @@ func (s *server) registerPage(w http.ResponseWriter, r *http.Request) { // Ст�
 		username := r.FormValue("username")
 		pass := r.FormValue("pass")
 
-		_, err := s.db.Exec("insert into users(username, full_name, last_name, password, role) values ($1, $2, $3, $4, 'user')", username, fname, lname, pass)
+		_, err := s.db.Exec("insert into users(username, firstName, lastName, password, role) values ($1, $2, $3, $4, $5)", username, fname, lname, pass, "users")
 
 		if err != nil {
 			log.Fatal(err)
