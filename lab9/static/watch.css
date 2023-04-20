@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #17130C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*navbar*/
+
+.navbar {
+    height: 120px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+#but {
+    font-weight: 800;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+
+
+/*Hamburger*/
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+}
+
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Nav style*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #17130C;
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+nav {
+    text-align: left;
+    margin-left: 25%;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:hover:before {
+    height: 100%;
+}
+
+#toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+}
+
+/*content*/
+
+.angle_text {
+    opacity: 10%;
+    color: #17130C;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7vh;
+    line-height: 118px;
+
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    transform: rotate(90deg);
+}
+
+.row {
+    margin: 0 7%;
+}
+
+.content h1 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content p {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 154.69%;
+
+    letter-spacing: 0.105em;
+}
+
+.content img {
+    width: 40%;
+}
+
+/*seasons*/
+
+.seasons img {
+    width: 100%;
+}
+
+.seasons h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.buttons {
+    margin-top: 5%;
+    width: 70%;
+    height: 100%;
+    border: 1px solid;
+}
+
+/*footer*/
+
+.footer {
+    margin: 5% 0 0 0;
+    padding: 0 7%;
+    height: 100px;
+    background-color: #1E1134;
+    margin-top: 10%;
+}
+
+.footer a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .pc-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex;
+    }
+}
+
