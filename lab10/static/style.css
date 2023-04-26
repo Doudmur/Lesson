@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #212529;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.create button {
+    width: 180px;
+    height: 40px;
+    border: #212529 2px solid;
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+.create button:hover {
+    background-color: #212529;
+    color: white;
+}
+
+table {
+    font-size: 23px;
+}
+
+table button {
+    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    border: #212529 2px solid;
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+table button:hover {
+    background-color: #212529;
+    color: white;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+}
+
+#createButton {
+    width: 170px;
+    height: 40px;
+    background-color: white;
+    border: #212529 1px solid;
+}
+
+#createButton:hover {
+    background-color: #212529;
+    color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-12">
+                <h1>Admin Panel</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <h3>Create new user</h3>
+            </div>
+
+
+            <form action="/create" method="post">
+            <div class="row mb-4">
+                <div class="col-3">
+                    <input type="text" name="fn" placeholder="First name">
+                </div>
+                <div class="col-3">
+                    <input type="text" name="ln" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-3">
+                    <input type="text" name="email" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="col-3">
+                <button id="createButton" type="submit">Create</button>
+            </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+</html>
